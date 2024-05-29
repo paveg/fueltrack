@@ -1,17 +1,13 @@
-## Vite-React-TS-Tailwind-Starter
+# fueltrack
 
-Choosing a technology stack is a very subjective matter, if you happen to like using `Vite`, `Tailwind`, `TS` and `shadcn ui` and more to build React SPA applications, then give it a try.
+TBD
 
 ## Run
 
-
 ```sh
-yarn
-yarn dev
+bun
+bun dev
 ```
-
-We prefer `Yarn` as package manager, If you want to use `pnpm` or `npm`, feel free to use
-
 
 ## Tech Stack
 
