@@ -1,0 +1,11 @@
+{
+  "home-link": {
+    "label": "fueltrack"
+  },
+  "login-link": {
+    "label": "ログイン"
+  },
+  "registration-link": {
+    "label": "ユーザー登録"
+  }
+}

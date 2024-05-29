@@ -5,6 +5,7 @@ import { cn } from 'src/lib/utils'
 import { LANGUAGES } from 'src/i18n/config'
 import { Languages, ChevronDown } from 'lucide-react'
 import i18next from 'i18next'
+import { Button } from '../ui/button'
 
 const getLocaleDisplayName = (locale: string, displayLocale?: string) => {
   const displayName = new Intl.DisplayNames([displayLocale || locale], {
@@ -32,12 +33,12 @@ const LanguageSelector = () => {
   return (
     <div className="flex items-end">
       <Popover>
-        <PopoverTrigger>
-          <div className="flex items-center gap-1 fill-black text-black">
-            <Languages size={18} />
+        <PopoverTrigger asChild>
+          <Button size="sm" variant="outline" className="flex items-center gap-1">
+            <Languages size={16} />
             {currentLanguage && getLocaleDisplayName(currentLanguage)}
             <ChevronDown size={12} />
-          </div>
+          </Button>
         </PopoverTrigger>
 
         <PopoverContent className="absolute mt-1 max-h-60 w-auto overflow-auto rounded-md bg-white p-0 py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">

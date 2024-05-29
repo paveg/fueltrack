@@ -1,15 +1,15 @@
 import { Helmet } from 'react-helmet'
 import { useTranslation } from 'react-i18next'
 
-const Home = () => {
+const Signup = () => {
   const { t } = useTranslation('translation')
   return (
     <>
       <Helmet>
-        <title>{t('title')}</title>
+        <title>{t('section.signup')}</title>
       </Helmet>
+      <div className="container"></div>
     </>
   )
 }
-
-export default Home
+export default Signup
