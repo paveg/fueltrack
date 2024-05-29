@@ -2,6 +2,7 @@ import { FuelIcon } from 'lucide-react'
 import { Helmet } from 'react-helmet'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
+import { Input } from 'src/components/ui/input'
 
 const Login = () => {
   const { t } = useTranslation('translation')
@@ -25,6 +26,12 @@ const Login = () => {
               {t('login.signup-message')}
             </Link>
           </p>
+          <form className="mt-8 space-y-6">
+            <div className="-space-y-px space-y-2 rounded-md shadow-sm">
+              <Input size={6} />
+              <Input />
+            </div>
+          </form>
         </div>
       </div>
     </>
